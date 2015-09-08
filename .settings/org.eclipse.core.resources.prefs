@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/xl/voteapp/ui/PublishVoteActivity.java=UTF-8
+encoding//src/com/xl/voteapp/ui/VotingActivity.java=GBK
+encoding//src/com/xl/voteapp/upload/DownloadOptionInformation.java=UTF-8
+encoding//src/com/xl/voteapp/upload/UploadPublishVoteInformation.java=UTF-8
+encoding//src/com/xl/voteapp/upload/UploadRegisterUserInformation.java=UTF-8
+encoding//src/com/xl/voteapp/upload/UploadVotingInformation.java=UTF-8
+encoding//src/com/xl/voteapp/util/GsonRequest.java=UTF-8
+encoding//src/com/xl/voteapp/widget/CustomerScrollView.java=UTF-8
+encoding/<project>=UTF-8

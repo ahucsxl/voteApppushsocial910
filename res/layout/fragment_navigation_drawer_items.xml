@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e2e2e2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_item_login_native"
+        style="@style/MenuItemLayoutStyle" >
+
+         <!-- <ImageView
+            style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/widget_bar_me"
+            android:contentDescription="@null" />   -->
+            
+       <com.xl.voteapp.widget.CircleImageView
+        android:id="@+id/menu_userface"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginRight="10dip" 
+        android:src="@drawable/mini_avatar"
+        />
+
+        <TextView
+            android:id="@+id/menu_item_login_name"     
+                
+            style="@style/MenuItemTextViewStyle"
+            android:gravity="center"
+            android:text="投票系统账号登录" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/menu_item_register"
+        style="@style/MenuItemLayoutStyle" >
+
+       <!--  <ImageView
+            style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/drawer_menu_icon_opensoft"
+            android:contentDescription="@null" /> -->
+
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:text="注册账号" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/menu_item_vote"
+        style="@style/MenuItemLayoutStyle" >
+
+       <!--  <ImageView
+            style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/drawer_menu_icon_blog"
+            android:contentDescription="@null" /> -->
+
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:text="发起投票" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+    
+    <LinearLayout
+        android:id="@+id/menu_item_login_qq"
+        style="@style/MenuItemLayoutStyle" >
+
+   <!--      <ImageView
+            style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/drawer_menu_icon_gitapp"
+            android:contentDescription="@null" /> -->
+
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:text="QQ账号登陆" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/menu_item_login_blog"
+        style="@style/MenuItemLayoutStyle"
+         
+        >
+
+      <!--   <ImageView
+            style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/drawer_menu_icon_rss"
+            android:contentDescription="@null" /> -->
+
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:text="微博账号登陆" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:visibility="gone" />
+
+</LinearLayout>

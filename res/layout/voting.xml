@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.xl.voteapp.ui.empty.EmptyLayout
+            android:id="@+id/error_layout_voting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/zhutilayout"
+                style="@style/option_item_rl"
+                android:layout_marginTop="20dip" >
+
+                <TextView
+                    android:id="@+id/zhuti"
+                    style="@style/option_item_text_parent"
+                    android:text="主题"
+                    android:textColor="@color/main_black"
+                    android:textSize="@dimen/text_size_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:background="@color/list_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/xiangxilayout"
+                style="@style/option_item_rl"
+                android:layout_marginTop="20dip" >
+
+                <TextView
+                    android:id="@+id/xiangxi"
+                    style="@style/option_item_text_parent"
+                    android:text="详细描述"
+                    android:textColor="@color/main_black"
+                    android:textSize="@dimen/text_size_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:background="@color/list_divider_color" />
+
+            <LinearLayout
+                android:id="@+id/optionlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/select_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip" >
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/addvote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/btn_style_login"
+                    android:text="投票"
+                    android:textColor="#FFFFFF" /> <!-- 声明于显示按钮的线性布局 -->
+
+                <Button
+                    android:id="@+id/vote_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/btn_style_login"
+                    android:text="查看结果"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

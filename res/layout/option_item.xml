@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/option_item_rl"
+    android:layout_marginTop="20dip" >
+
+    <TextView
+        android:id="@+id/option1"
+        style="@style/option_item_text_parent"
+        android:text="选项一："
+        android:textColor="@color/main_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

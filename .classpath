@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/butterknife-5.1.2.jar"/>
+	<classpathentry kind="lib" path="libs/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="libs/jg_filter_sdk_1.1.jar"/>
+	<classpathentry kind="lib" path="libs/mid-sdk-2.20.jar"/>
+	<classpathentry kind="lib" path="libs/wup-1.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="libs/Xg_sdk_v2.38_20150616_1057.jar"/>
+	<classpathentry kind="lib" path="libs/xstream-1.4.7.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginTop="20dip"
+        style="@style/User_info_layout"
+        android:background="@drawable/table_above_nor" >
+
+        <TextView
+            style="@style/User_info_title"
+            android:text="用户名" />
+
+        <TextView
+            android:id="@+id/user_info_name"
+            style="@style/User_info_detail_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/User_info_layout"
+        android:background="@drawable/table_mid_nor" >
+
+        <TextView
+            style="@style/User_info_title"
+            android:text="电子邮箱" />
+
+        <TextView
+            android:id="@+id/user_info_email"
+            style="@style/User_info_detail_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/User_info_layout"
+        android:background="@drawable/table_mid_nor" >
+
+        <TextView
+            style="@style/User_info_title"
+            android:text="电话号码" />
+
+        <TextView
+            android:id="@+id/user_info_tel"
+            style="@style/User_info_detail_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/User_info_layout"
+        android:background="@drawable/table_below_nor" >
+
+        <TextView
+            style="@style/User_info_title"
+            android:text="个人介绍：" />
+
+        <TextView
+            android:id="@+id/user_info_intro"
+            style="@style/User_info_detail_text" />
+    </LinearLayout>
+
+</LinearLayout>

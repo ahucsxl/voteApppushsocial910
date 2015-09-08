@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_background"
+    android:padding="@dimen/space_8" >
+
+    <!-- 项目作者头像 -->
+
+    <com.xl.voteapp.widget.CircleImageView
+        android:id="@+id/menu_userface"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/mini_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:orientation="vertical" >
+
+        <!-- 项目名称 -->
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginRight="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/list_text_title"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- 项目描述 -->
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_title"
+            android:layout_marginBottom="@dimen/space_5"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/main_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_source"
+                style="@style/list_text_info"
+                android:layout_below="@id/tv_description"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/list_text_info"
+                android:layout_below="@id/tv_description"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/tv_source"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="@dimen/space_2" />
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                style="@style/list_text_info"
+                android:layout_below="@id/tv_description"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/tv_time"
+                android:drawableLeft="@drawable/ic_comment_count"
+                android:drawablePadding="@dimen/space_2"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
